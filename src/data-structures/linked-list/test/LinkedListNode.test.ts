@@ -1,5 +1,10 @@
 import {LinkedListNode} from '../LinkedListNode';
 
+export function assertNode<T>(node: LinkedListNode<T> | null, value: T): void {
+  expect(node).toBeDefined();
+  if (node) expect(node.value).toBe(value);
+}
+
 describe('LinkedListNode', () => {
   it('should create list node with value', () => {
     const node = new LinkedListNode(1);
@@ -24,24 +29,7 @@ describe('LinkedListNode', () => {
     expect(node1.next).toBeDefined();
     expect(node2.next).toBeNull();
     expect(node1.value).toBe(1);
-    // @ts-ignore
-    expect(node1.next.value).toBe(2);
+    expect(node1.next?.value).toBe(2);
   });
 
-  // it('should convert node to string', () => {
-  //   const node = new LinkedListNode(1);
-  //
-  //   expect(node.toString()).toBe('1');
-  //
-  //   node.value = 'string value';
-  //   expect(node.toString()).toBe('string value');
-  // });
-  //
-  // it('should convert node to string with custom stringifier', () => {
-  //   const nodeValue = { value: 1, key: 'test' };
-  //   const node = new LinkedListNode(nodeValue);
-  //   const toStringCallback = (value) => `value: ${value.value}, key: ${value.key}`;
-  //
-  //   expect(node.toString(toStringCallback)).toBe('value: 1, key: test');
-  // });
 });

@@ -1,10 +1,5 @@
 import {LinkedList} from '../LinkedList';
-import {LinkedListNode} from "../LinkedListNode";
-
-function assertNode<T>(node: LinkedListNode<T> | null, value: T) {
-  expect(node).toBeDefined();
-  if (node) expect(node.value).toBe(value);
-}
+import {assertNode} from "./LinkedListNode.test";
 
 describe('LinkedList', () => {
   it('should create an empty list', () => {
