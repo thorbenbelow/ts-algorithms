@@ -27,7 +27,7 @@ Implementations of popular algorithms and data structures. Following the example
 * **Math**
 - [ ]  [Bit Manipulation](src/algorithms/math/bits) - set/get/update/clear bits, multiplication/division by two, make negative etc.
 - [x]  [Factorial](src/algorithms/math/factorial) 
-- [ ]  [Fibonacci Number](src/algorithms/math/fibonacci) - classic and closed-form versions
+- [x]  [Fibonacci Number](src/algorithms/math/fibonacci) - classic and closed-form versions
 - [ ]  [Primality Test](src/algorithms/math/primality-test) (trial division method)
 - [ ]  [Euclidean Algorithm](src/algorithms/math/euclidean-algorithm) - calculate the Greatest Common Divisor (GCD)
 - [ ]  [Least Common Multiple](src/algorithms/math/least-common-multiple) (LCM)
