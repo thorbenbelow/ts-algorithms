@@ -1,0 +1,26 @@
+stages:
+  - audit
+  - test
+
+image: node:12.14.0-alpine
+before_script:
+  - npm ci
+
+test:
+  stage: test
+  needs: [ ]
+  script:
+    - npm t
+  rules:
+    - changes:
+        - src/**/*.ts
+        - test/**/*.ts
+lint:
+  stage: audit
+  needs: [ ]
+  script:
+    - npm run lint
+  rules:
+    - changes:
+        - src/**/*
+        - .eslintrc.yml
