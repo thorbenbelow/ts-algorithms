@@ -39,4 +39,8 @@ pages:
   artifacts:
     paths:
       - public
+  rules:
+    - changes:
+        - src/**/*.ts
+        - test/**/*.ts
 
