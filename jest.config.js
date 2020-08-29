@@ -6,6 +6,5 @@ module.exports = {
     testPathIgnorePatterns: ["/lib/", "/node_modules/"],
     moduleFileExtensions: ["ts","js", "json", "node"],
     collectCoverage: false,
-    bail: false,
-    verbose:false
+    bail: false
 };
