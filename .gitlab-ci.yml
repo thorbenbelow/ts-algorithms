@@ -15,3 +15,12 @@ test:
     - changes:
         - src/**/*.ts
         - test/**/*.ts
+lint:
+  stage: audit
+  needs: [ ]
+  script:
+    - npm run lint
+  rules:
+    - changes:
+        - src/**/*
+        - .eslintrc.yml
