@@ -4,7 +4,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint . --ext .ts",
-    "fix": "npm run lint --  --fix"
+    "fix": "npm run lint --  --fix",
+    "ci-test": "npm run test -- --coverage"
   },
   "private": true,
   "husky": {
