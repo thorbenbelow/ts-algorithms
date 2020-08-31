@@ -4,7 +4,7 @@ Implementations of popular algorithms and data structures. Following the example
 See [test coverage](https://below.thorben.gitlab.io/std)
 ## Data Structures
 - [x]  [Linked List](src/data-structures/linked-list)
-- [ ]  [Doubly Linked List](src/data-structures/doubly-linked-list)
+- [x]  [Doubly Linked List](src/data-structures/doubly-linked-list)
 - [ ]  [Queue](src/data-structures/queue)
 - [ ]  [Stack](src/data-structures/stack)
 - [ ]  [Hash Table](src/data-structures/hash-table)
