@@ -1,12 +1,11 @@
 # Algorithms and Data Structures
 
-Implementations of popular algorithms and data structures. Following the example of [trekhleb](https://github.com/trekhleb/javascript-algorithms).  
-See [test coverage](https://below.thorben.gitlab.io/std)
+Implementations of popular algorithms and data structures. Following the example of [trekhleb](https://github.com/trekhleb/javascript-algorithms).
 ## Data Structures
 - [x]  [Linked List](src/data-structures/linked-list)
 - [x]  [Doubly Linked List](src/data-structures/doubly-linked-list)
-- [ ]  [Queue](src/data-structures/queue)
-- [ ]  [Stack](src/data-structures/stack)
+- [x]  [Queue](src/data-structures/queue)
+- [x]  [Stack](src/data-structures/stack)
 - [ ]  [Hash Table](src/data-structures/hash-table)
 - [ ]  [Heap](src/data-structures/heap) - max and min heap versions
 - [ ]  [Priority Queue](src/data-structures/priority-queue)
