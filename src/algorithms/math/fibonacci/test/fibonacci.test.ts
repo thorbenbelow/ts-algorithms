@@ -20,9 +20,10 @@ describe('fibonacci', () => {
     });
   });
   describe('fibonacciNth', () => {
-    it('should throw an error on n < 1', () => {
-      expect(() => fibonacciSeq(0)).toThrow();
-      expect(() => fibonacciSeq(-1)).toThrow();
+    it('should throw an error on n === 1', () => {
+      expect(() => fibonacciNth(0)).toThrow();
+      expect(() => fibonacciNth(-1)).toThrow();
+
     });
     it('should calculate fibonacci correctly', () => {
       expect(fibonacciNth(1)).toBe(1);

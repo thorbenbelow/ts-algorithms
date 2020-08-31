@@ -70,24 +70,29 @@ describe('DoublyLinkedList', () => {
       assertNode(dll.tail, 2, null, 1);
     })
     it('should delete the inner node', () => {
-      dll.append(3);
-      assertNode(dll.delete(a => a === 3), 3, null, 2);
-      assertNode(dll.head, 1, 2);
-      assertNode(dll.tail, 2, null, 1);
+      dll.append(3); // FIXME
+      assertNode(dll.delete(a => a === 2), 2, 3, 1);
+      assertNode(dll.head, 1, 3);
+      assertNode(dll.tail, 3, null, 1);
     })
     it('should delete the head', () => {
-      assertNode(dll.delete(a => a === 1), 1, 2);
-      assertNode(dll.head, 2);
-      assertNode(dll.tail,2);
+      assertNode(dll.delete(a => a === 1), 1, 3);
+      assertNode(dll.head, 3);
+      assertNode(dll.tail,3);
     });
     it('should delete the tail', () => {
       dll.prepend(1);
-      assertNode(dll.delete(a => a === 2), 2,null,1);
+      assertNode(dll.delete(a => a === 3), 3,null,1);
       assertNode(dll.head, 1);
       assertNode(dll.tail,1);
     });
     it('should delete the remaining node', () => {
       assertNode(dll.delete(a => a === 1), 1);
+      expect(dll.head).toBeNull();
+      expect(dll.tail).toBeNull();
+    });
+    it('should be able to handle empty lists', () => {
+      expect(dll.delete(a => a === 1)).toBeNull();
       expect(dll.head).toBeNull();
       expect(dll.tail).toBeNull();
     });

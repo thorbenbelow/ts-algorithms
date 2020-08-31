@@ -1,8 +1,10 @@
 import {LinkedListNode} from './LinkedListNode';
 
 export class LinkedList<T> {
-  head: LinkedListNode<T> | null = null;
-  tail: LinkedListNode<T> | null = null;
+  constructor(
+    public head: LinkedListNode<T> | null = null,
+    public tail: LinkedListNode<T> | null = null
+  ) {}
 
   prepend(value: T): void {
     const node = new LinkedListNode<T>(value, this.head);
