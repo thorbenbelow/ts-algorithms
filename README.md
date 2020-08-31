@@ -62,7 +62,7 @@ Implementations of popular algorithms and data structures. Following the example
 - [ ]  [Longest Common Substring](src/algorithms/string/longest-common-substring)
 - [ ]  [Regular Expression Matching](src/algorithms/string/regular-expression-matching)
 * **Searches**
-- [ ]  [Linear Search](src/algorithms/search/linear-search)
+- [x]  [Linear Search](src/algorithms/search/linear-search)
 - [ ]  [Jump Search](src/algorithms/search/jump-search) (or Block Search) - search in sorted array
 - [ ]  [Binary Search](src/algorithms/search/binary-search) - search in sorted array
 - [ ]  [Interpolation Search](src/algorithms/search/interpolation-search) - search in uniformly distributed sorted array

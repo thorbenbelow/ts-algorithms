@@ -1,5 +1,5 @@
 import {DoublyLinkedListNode} from "./DoublyLinkedListNode";
-export type CompareFn<T> = (value: T ) => boolean;
+import {CompareFn} from "../../util/typings";
 
 export class DoublyLinkedList<T> {
   constructor(
