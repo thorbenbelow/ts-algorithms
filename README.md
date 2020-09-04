@@ -11,7 +11,7 @@ Implementations of popular algorithms and data structures. Following the example
 - [ ]  [Priority Queue](src/data-structures/priority-queue)
 - [ ]  [Trie](src/data-structures/trie)
 - [ ]  [Tree](src/data-structures/tree)
-- [ ]  [Binary Search Tree](src/data-structures/tree/binary-search-tree)
+- [ ]  [Binary Search Tree](src/data-structures/binary-search-tree)
 - [ ]  [AVL Tree](src/data-structures/tree/avl-tree)
 - [ ]  [Red-Black Tree](src/data-structures/tree/red-black-tree)
 - [ ]  [Segment Tree](src/data-structures/tree/segment-tree) - with min/max/sum range queries examples
@@ -28,7 +28,7 @@ Implementations of popular algorithms and data structures. Following the example
 - [ ]  [Bit Manipulation](src/algorithms/math/bits) - set/get/update/clear bits, multiplication/division by two, make negative etc.
 - [x]  [Factorial](src/algorithms/math/factorial) 
 - [x]  [Fibonacci Number](src/algorithms/math/fibonacci) - classic and closed-form versions
-- [ ]  [Primality Test](src/algorithms/math/primality-test) (trial division method)
+- [x]  [Primality Test](src/algorithms/math/primality-test) (trial division method)
 - [ ]  [Euclidean Algorithm](src/algorithms/math/euclidean-algorithm) - calculate the Greatest Common Divisor (GCD)
 - [ ]  [Least Common Multiple](src/algorithms/math/least-common-multiple) (LCM)
 - [ ]  [Sieve of Eratosthenes](src/algorithms/math/sieve-of-eratosthenes) - finding all prime numbers up to any given limit

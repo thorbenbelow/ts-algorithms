@@ -11,7 +11,7 @@ test:
   stage: test
   needs: [ ]
   script:
-    - npm run ci-test
+    - npm run test-coverage
   rules:
     - changes:
         - src/**/*.ts
