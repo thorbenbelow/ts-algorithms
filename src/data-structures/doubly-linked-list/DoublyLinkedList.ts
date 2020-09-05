@@ -1,5 +1,5 @@
 import {DoublyLinkedListNode} from "./DoublyLinkedListNode";
-import {CompareFn} from "../../util/typings";
+import {EvalFn} from "../../util/typings";
 
 export class DoublyLinkedList<T> {
   constructor(
@@ -29,20 +29,20 @@ export class DoublyLinkedList<T> {
       this.tail = node;
     }
   }
-  contains(compareFn: CompareFn<T>): boolean{
-    return Boolean(this.find(compareFn));
+  contains(evalFn: EvalFn<T>): boolean{
+    return Boolean(this.find(evalFn));
   }
-  find(compareFn: CompareFn<T>): DoublyLinkedListNode<T> | null {
+  find(evalFn: EvalFn<T>): DoublyLinkedListNode<T> | null {
     let node = this.head;
     while(node){
-      if(compareFn(node.value)) return node;
+      if(evalFn(node.value)) return node;
       node = node.next;
     }
     return null;
   }
-  delete(compareFn: CompareFn<T>): DoublyLinkedListNode<T> | null {
+  delete(evalFn: EvalFn<T>): DoublyLinkedListNode<T> | null {
     if(!this.head) return null;
-    if(compareFn(this.head.value)){
+    if(evalFn(this.head.value)){
       const node = this.head;
       if(!this.head.next){
         this.head = null;
@@ -53,13 +53,13 @@ export class DoublyLinkedList<T> {
       }
       return node;
     }
-    if(this.tail && compareFn(this.tail.value)){
+    if(this.tail && evalFn(this.tail.value)){
       const node = this.tail;
       this.tail = this.tail.previous;
       if(this.tail) this.tail.next = null;
       return node;
     }
-    const node = this.find(compareFn);
+    const node = this.find(evalFn);
     if(!node)return null;
     if(node.previous) node.previous.next = node.next;
     if(node.next) node.next.previous = node.previous;
