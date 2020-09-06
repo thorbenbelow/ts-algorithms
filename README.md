@@ -10,8 +10,7 @@ Implementations of popular algorithms and data structures. Following the example
 - [ ]  [Heap](src/data-structures/heap) - max and min heap versions
 - [ ]  [Priority Queue](src/data-structures/priority-queue)
 - [ ]  [Trie](src/data-structures/trie)
-- [ ]  [Tree](src/data-structures/tree)
-- [ ]  [Binary Search Tree](src/data-structures/binary-search-tree)
+- [x]  [Binary Search Tree](src/data-structures/binary-search-tree)
 - [ ]  [AVL Tree](src/data-structures/tree/avl-tree)
 - [ ]  [Red-Black Tree](src/data-structures/tree/red-black-tree)
 - [ ]  [Segment Tree](src/data-structures/tree/segment-tree) - with min/max/sum range queries examples
