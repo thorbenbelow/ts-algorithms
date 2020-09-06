@@ -1,7 +1,7 @@
 import {linearSearch} from "../linearSearch";
 
 describe('#linearSearch', () => {
-  const A: any[] = [];
+  const A: Array<number> = [];
   it('should be able to handle empty arrays', () => {
     expect(linearSearch(A, () => true)).toBeNull();
   })

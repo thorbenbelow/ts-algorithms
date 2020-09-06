@@ -12,7 +12,9 @@ function assertPrimeFn(primeFn: (n: number) => boolean): void {
     expect(primeFn(0)).toBe(false);
     expect(primeFn(1)).toBe(false);
     expect(primeFn(4)).toBe(false);
+    expect(primeFn(25)).toBe(false);
     expect(primeFn(7917)).toBe(false);
+    expect(primeFn(7911)).toBe(false);
   });
 }
 

@@ -7,3 +7,9 @@ extends:
   - "plugin:@typescript-eslint/recommended"
 rules:
   "@typescript-eslint/no-use-before-define": off
+  "@typescript-eslint/consistent-type-assertions":
+    - error
+    - assertionStyle: angle-bracket
+      objectLiteralTypeAssertions: never
+
+
