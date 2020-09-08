@@ -9,29 +9,17 @@ export class BinarySearchTree<T> {
   }
 
   add(value: T): void {
-    const node = new BinarySearchTreeNode(value);
-    if (!this.root) {
-      this.root = node;
-    } else {
-      this.insertNode(this.root, node);
-    }
+    this.root = this.insert(this.root, value);
   }
-
-  private insertNode(curr: BinarySearchTreeNode<T>, node: BinarySearchTreeNode<T>): void {
-    if (this.compareFn(curr.value, node.value) === 0) {
-      return;
-    } else if (this.compareFn(curr.value, node.value) > 0) {
-      if (curr.left) {
-        this.insertNode(curr.left, node);
-      } else {
-        curr.left = node;
-      }
-    } else {
-      if (curr.right) {
-        this.insertNode(curr.right, node);
-      } else {
-        curr.right = node;
-      }
+  private insert(node: BinarySearchTreeNode<T> | null, value: T): BinarySearchTreeNode<T> | null{
+    if(node === null) return new BinarySearchTreeNode<T>(value);
+    if(this.compareFn(node.value, value) === 0) return node;
+    if(this.compareFn(node.value, value) > 0){
+      node.left = this.insert(node.left, value);
+      return node;
+    }else {
+      node.right = this.insert(node.right, value);
+      return node;
     }
   }
 
@@ -51,7 +39,7 @@ export class BinarySearchTree<T> {
     this.root = this._delete(this.root, value);
   }
 
-  _delete(node: BinarySearchTreeNode<T> | null, value: T): BinarySearchTreeNode<T> | null {
+  private _delete(node: BinarySearchTreeNode<T> | null, value: T): BinarySearchTreeNode<T> | null {
     if (node === null) {
       return node;
     }
