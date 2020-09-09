@@ -63,7 +63,7 @@ Implementations of popular algorithms and data structures. Following the example
 * **Searches**
 - [x]  [Linear Search](src/algorithms/search/linear-search)
 - [ ]  [Jump Search](src/algorithms/search/jump-search) (or Block Search) - search in sorted array
-- [ ]  [Binary Search](src/algorithms/search/binary-search) - search in sorted array
+- [x]  [Binary Search](src/algorithms/search/binary-search) - search in sorted array
 - [ ]  [Interpolation Search](src/algorithms/search/interpolation-search) - search in uniformly distributed sorted array
 * **Sorting**
 - [ ]  [Bubble Sort](src/algorithms/sorting/bubble-sort)
@@ -115,7 +115,7 @@ Implementations of popular algorithms and data structures. Following the example
 ### Algorithms by Paradigm
 
 * **Brute Force**
-- [ ]  [Linear Search](src/algorithms/search/linear-search)
+- [x]  [Linear Search](src/algorithms/search/linear-search)
 - [ ]  [Rain Terraces](src/algorithms/uncategorized/rain-terraces) - trapping rain water problem
 - [ ]  [Recursive Staircase](src/algorithms/uncategorized/recursive-staircase) - count the number of ways to reach to the top
 - [ ]  [Maximum Subarray](src/algorithms/sets/maximum-subarray)
@@ -141,7 +141,7 @@ Implementations of popular algorithms and data structures. Following the example
 - [ ]  [Permutations](src/algorithms/sets/permutations) (with and without repetitions)
 - [ ]  [Combinations](src/algorithms/sets/combinations) (with and without repetitions)
 * **Dynamic Programming** 
-- [ ]  [Fibonacci Number](src/algorithms/math/fibonacci)
+- [x]  [Fibonacci Number](src/algorithms/math/fibonacci)
 - [ ]  [Jump Game](src/algorithms/uncategorized/jump-game)
 - [ ]  [Unique Paths](src/algorithms/uncategorized/unique-paths)
 - [ ]  [Rain Terraces](src/algorithms/uncategorized/rain-terraces) - trapping rain water problem
