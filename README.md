@@ -53,7 +53,7 @@ Implementations of popular algorithms and data structures. Following the example
 - [ ]  [Maximum Subarray](src/algorithms/sets/maximum-subarray) - "Brute Force" and "Dynamic Programming" (Kadane's) versions
 - [ ]  [Combination Sum](src/algorithms/sets/combination-sum) - find all combinations that form specific sum
 * **Strings**
-- [ ]  [Hamming Distance](src/algorithms/string/hamming-distance) - number of positions at which the symbols are different
+- [x]  [Hamming Distance](src/algorithms/string/hamming-distance) - number of positions at which the symbols are different
 - [ ]  [Levenshtein Distance](src/algorithms/string/levenshtein-distance) - minimum edit distance between two sequences
 - [ ]  [Knuth–Morris–Pratt Algorithm](src/algorithms/string/knuth-morris-pratt) (KMP Algorithm) - substring search (pattern matching)
 - [ ]  [Z Algorithm](src/algorithms/string/z-algorithm) - substring search (pattern matching)
