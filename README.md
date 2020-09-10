@@ -42,7 +42,7 @@ Implementations of popular algorithms and data structures. Following the example
 - [ ]  [Discrete Fourier Transform](src/algorithms/math/fourier-transform) - decompose a function of time (a signal) into the frequencies that make it up 
 * **Sets**
 - [ ]  [Cartesian Product](src/algorithms/sets/cartesian-product) - product of multiple sets
-- [ ]  [Fisher–Yates Shuffle](src/algorithms/sets/fisher-yates) - random permutation of a finite sequence
+- [x]  [Fisher–Yates Shuffle](src/algorithms/sets/fisher-yates) - random permutation of a finite sequence
 - [ ]  [Power Set](src/algorithms/sets/power-set) - all subsets of a set (bitwise and backtracking solutions)
 - [ ]  [Permutations](src/algorithms/sets/permutations) (with and without repetitions)
 - [ ]  [Combinations](src/algorithms/sets/combinations) (with and without repetitions)
