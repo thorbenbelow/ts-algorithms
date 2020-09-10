@@ -43,7 +43,7 @@ Implementations of popular algorithms and data structures. Following the example
 * **Sets**
 - [ ]  [Cartesian Product](src/algorithms/sets/cartesian-product) - product of multiple sets
 - [x]  [Fisher–Yates Shuffle](src/algorithms/sets/fisher-yates) - random permutation of a finite sequence
-- [ ]  [Power Set](src/algorithms/sets/power-set) - all subsets of a set (bitwise and backtracking solutions)
+- [x]  [Power Set](src/algorithms/sets/power-set) - all subsets of a set (bitwise and backtracking solutions)
 - [ ]  [Permutations](src/algorithms/sets/permutations) (with and without repetitions)
 - [ ]  [Combinations](src/algorithms/sets/combinations) (with and without repetitions)
 - [ ]  [Longest Common Subsequence](src/algorithms/sets/longest-common-subsequence) (LCS)
