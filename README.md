@@ -30,7 +30,7 @@ Implementations of popular algorithms and data structures. Following the example
 - [x]  [Primality Test](src/algorithms/math/primality-test) (trial division method)
 - [x]  [Euclidean Algorithm](src/algorithms/math/euclidean-algorithm) - calculate the Greatest Common Divisor (GCD)
 - [x]  [Least Common Multiple](src/algorithms/math/least-common-multiple)
-- [ ]  [Sieve of Eratosthenes](src/algorithms/math/sieve-of-eratosthenes) - finding all prime numbers up to any given limit
+- [x]  [Sieve of Eratosthenes](src/algorithms/math/sieve-of-eratosthenes) - finding all prime numbers up to any given limit
 - [ ]  [Is Power of Two](src/algorithms/math/is-power-of-two) - check if the number is power of two (naive and bitwise algorithms)
 - [ ]  [Pascal's Triangle](src/algorithms/math/pascal-triangle)
 - [ ]  [Complex Number](src/algorithms/math/complex-number) - complex numbers and basic operations with them
