@@ -66,15 +66,15 @@ Implementations of popular algorithms and data structures. Following the example
 - [x]  [Binary Search](src/algorithms/search/binary-search) - search in sorted array
 - [ ]  [Interpolation Search](src/algorithms/search/interpolation-search) - search in uniformly distributed sorted array
 * **Sorting**
-- [ ]  [Bubble Sort](src/algorithms/sorting/bubble-sort)
-- [ ]  [Selection Sort](src/algorithms/sorting/selection-sort)
-- [ ]  [Insertion Sort](src/algorithms/sorting/insertion-sort)
-- [ ]  [Heap Sort](src/algorithms/sorting/heap-sort)
-- [ ]  [Merge Sort](src/algorithms/sorting/merge-sort)
-- [ ]  [Quicksort](src/algorithms/sorting/quick-sort) - in-place and non-in-place implementations
-- [ ]  [Shellsort](src/algorithms/sorting/shell-sort)
-- [ ]  [Counting Sort](src/algorithms/sorting/counting-sort)
-- [ ]  [Radix Sort](src/algorithms/sorting/radix-sort)
+- [ ]  [Bubble Sort](src/algorithms/sort/bubble-sort)
+- [ ]  [Selection Sort](src/algorithms/sort/selection-sort)
+- [x]  [Insertion Sort](src/algorithms/sort/insertion-sort)
+- [ ]  [Heap Sort](src/algorithms/sort/heap-sort)
+- [ ]  [Merge Sort](src/algorithms/sort/merge-sort)
+- [ ]  [Quicksort](src/algorithms/sort/quick-sort) - in-place and non-in-place implementations
+- [ ]  [Shellsort](src/algorithms/sort/shell-sort)
+- [ ]  [Counting Sort](src/algorithms/sort/counting-sort)
+- [ ]  [Radix Sort](src/algorithms/sort/radix-sort)
 * **Linked Lists**
 - [ ]  [Straight Traversal](src/algorithms/linked-list/traversal)
 - [ ]  [Reverse Traversal](src/algorithms/linked-list/reverse-traversal)
@@ -90,7 +90,7 @@ Implementations of popular algorithms and data structures. Following the example
 - [ ]  [Floyd-Warshall Algorithm](src/algorithms/graph/floyd-warshall) - find shortest paths between all pairs of vertices
 - [ ]  [Detect Cycle](src/algorithms/graph/detect-cycle) - for both directed and undirected graphs (DFS and Disjoint Set based versions)
 - [ ]  [Prim’s Algorithm](src/algorithms/graph/prim) - finding Minimum Spanning Tree (MST) for weighted undirected graph
-- [ ]  [Topological Sorting](src/algorithms/graph/topological-sorting) - DFS method
+- [ ]  [Topological sort](src/algorithms/graph/topological-sort) - DFS method
 - [ ]  [Articulation Points](src/algorithms/graph/articulation-points) - Tarjan's algorithm (DFS based)
 - [ ]  [Bridges](src/algorithms/graph/bridges) - DFS based algorithm
 - [ ]  [Eulerian Path and Eulerian Circuit](src/algorithms/graph/eulerian-path) - Fleury's algorithm - Visit every edge exactly once
@@ -132,8 +132,8 @@ Implementations of popular algorithms and data structures. Following the example
 - [ ]  [Tower of Hanoi](src/algorithms/uncategorized/hanoi-tower)
 - [ ]  [Pascal's Triangle](src/algorithms/math/pascal-triangle)
 - [ ]  [Euclidean Algorithm](src/algorithms/math/euclidean-algorithm) - calculate the Greatest Common Divisor (GCD)
-- [ ]  [Merge Sort](src/algorithms/sorting/merge-sort)
-- [ ]  [Quicksort](src/algorithms/sorting/quick-sort)
+- [ ]  [Merge Sort](src/algorithms/sort/merge-sort)
+- [ ]  [Quicksort](src/algorithms/sort/quick-sort)
 - [ ]  [Tree Depth-First Search](src/algorithms/tree/depth-first-search) (DFS)
 - [ ]  [Graph Depth-First Search](src/algorithms/graph/depth-first-search) (DFS)
 - [ ]  [Jump Game](src/algorithms/uncategorized/jump-game)
