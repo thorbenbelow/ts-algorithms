@@ -1,5 +1,5 @@
 {
-  "name": "std",
+  "name": "ts-algorithms",
   "version": "1.0.0",
   "scripts": {
     "test": "jest",
@@ -13,8 +13,6 @@
       "pre-commit": "npm test && npm run lint"
     }
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "26.0.10",
@@ -22,9 +20,9 @@
     "@typescript-eslint/eslint-plugin": "2.24.0",
     "@typescript-eslint/parser": "2.24.0",
     "eslint": "6.8.0",
-    "husky": "4.2.5",
+    "husky": "4.3.8",
     "jest": "26.4.2",
     "ts-jest": "26.3.0",
-    "typescript": "4.0.2"
+    "typescript": "4.6.3"
   }
 }
