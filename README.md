@@ -66,12 +66,12 @@ Implementations of popular algorithms and data structures. Following the example
 - [x]  [Binary Search](src/algorithms/search/binary-search) - search in sorted array
 - [ ]  [Interpolation Search](src/algorithms/search/interpolation-search) - search in uniformly distributed sorted array
 * **Sorting**
-- [ ]  [Bubble Sort](src/algorithms/sort/bubble-sort)
+- [x]  [Bubble Sort](src/algorithms/sort/bubble-sort)
 - [ ]  [Selection Sort](src/algorithms/sort/selection-sort)
 - [x]  [Insertion Sort](src/algorithms/sort/insertion-sort)
 - [ ]  [Heap Sort](src/algorithms/sort/heap-sort)
 - [ ]  [Merge Sort](src/algorithms/sort/merge-sort)
-- [ ]  [Quicksort](src/algorithms/sort/quick-sort) - in-place and non-in-place implementations
+- [x]  [Quicksort](src/algorithms/sort/quick-sort) - in-place and non-in-place implementations
 - [ ]  [Shellsort](src/algorithms/sort/shell-sort)
 - [ ]  [Counting Sort](src/algorithms/sort/counting-sort)
 - [ ]  [Radix Sort](src/algorithms/sort/radix-sort)
@@ -133,7 +133,7 @@ Implementations of popular algorithms and data structures. Following the example
 - [ ]  [Pascal's Triangle](src/algorithms/math/pascal-triangle)
 - [ ]  [Euclidean Algorithm](src/algorithms/math/euclidean-algorithm) - calculate the Greatest Common Divisor (GCD)
 - [ ]  [Merge Sort](src/algorithms/sort/merge-sort)
-- [ ]  [Quicksort](src/algorithms/sort/quick-sort)
+- [x]  [Quicksort](src/algorithms/sort/quick-sort)
 - [ ]  [Tree Depth-First Search](src/algorithms/tree/depth-first-search) (DFS)
 - [ ]  [Graph Depth-First Search](src/algorithms/graph/depth-first-search) (DFS)
 - [ ]  [Jump Game](src/algorithms/uncategorized/jump-game)
