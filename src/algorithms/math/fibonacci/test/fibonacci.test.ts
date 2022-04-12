@@ -1,5 +1,6 @@
 import {fibonacciNth, fibonacciNthClosedForm, fibonacciSeq} from '../fibonacci';
 
+
 describe('fibonacci', () => {
   describe('fibonacciSeq', () => {
     it('should throw an error on n < 1', () => {
@@ -43,8 +44,10 @@ describe('fibonacci', () => {
       expect(fibonacciNth(73)).toBe(806515533049393);
       expect(fibonacciNth(74)).toBe(1304969544928657);
       expect(fibonacciNth(75)).toBe(2111485077978050);
+      /* eslint-disable @typescript-eslint/no-loss-of-precision */
       expect(fibonacciNth(80)).toBe(23416728348467685);
       expect(fibonacciNth(90)).toBe(2880067194370816120);
+      /* eslint-enable @typescript-eslint/no-loss-of-precision */
     });
   });
   describe('fibonacciClosedForm', () => {
