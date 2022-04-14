@@ -1,5 +1,5 @@
-import {LinkedList} from '../LinkedList';
-import {assertNode} from "./LinkedListNode.test";
+import { LinkedList } from '../LinkedList';
+import { assertNode } from "./LinkedListNode.test";
 
 describe('LinkedList', () => {
   it('should create an empty list', () => {
@@ -36,14 +36,17 @@ describe('LinkedList', () => {
   describe('#find', () => {
     const linkedList = new LinkedList();
     linkedList.append(1);
-    it('should find a node', () => {
+    linkedList.append(2);
+    it('should find first node', () => {
       const node = linkedList.find(a => a === 1)
-      expect(node).toBeDefined();
-      if (node) expect(node.value).toBe(1);
+      assertNode(node, 1)
     });
+    it('should find second node', () => {
+      const node = linkedList.find(a => a === 2);
+      assertNode(node, 2)
+    })
     it('should not find a node', () => {
-      linkedList.append(1);
-      const node = linkedList.find(a => a === 2)
+      const node = linkedList.find(a => a === 3)
       expect(node).toBeNull();
     });
   })
@@ -91,5 +94,15 @@ describe('LinkedList', () => {
       assertNode(linkedList.tail, 1);
       if (linkedList.tail) expect(linkedList.tail.next).toBeNull();
     });
+  })
+
+  describe('#entries', () => {
+    const linkedList = new LinkedList();
+    linkedList.append(1);
+    linkedList.append(2);
+    it('should return an iterator to all entries', () => {
+      const entries = linkedList.entries();
+      expect(Array.from(entries)).toEqual([1, 2]);
+    })
   })
 })

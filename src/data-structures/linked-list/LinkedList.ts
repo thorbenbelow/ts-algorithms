@@ -1,10 +1,10 @@
-import {LinkedListNode} from './LinkedListNode';
+import { LinkedListNode } from './LinkedListNode';
 
 export class LinkedList<T> {
   constructor(
     public head: LinkedListNode<T> | null = null,
     public tail: LinkedListNode<T> | null = null
-  ) {}
+  ) { }
 
   prepend(value: T): void {
     const node = new LinkedListNode<T>(value, this.head);
@@ -32,6 +32,14 @@ export class LinkedList<T> {
     return null;
   }
 
+  *entries(): IterableIterator<T> {
+    let node = this.head;
+    while (node) {
+      yield node.value;
+      node = node.next;
+    }
+  }
+
   contains(compareFn: (a: T) => boolean): boolean {
     return Boolean(this.find(compareFn));
   }
@@ -51,7 +59,7 @@ export class LinkedList<T> {
       if (compareFn(node.next.value)) {
         const removed = node.next;
         node.next = node.next.next;
-        if(!node.next){
+        if (!node.next) {
           this.tail = null;
         }
         return removed;
