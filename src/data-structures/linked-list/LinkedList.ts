@@ -1,15 +1,17 @@
 import { LinkedListNode } from './LinkedListNode';
 
 export class LinkedList<T> {
-  constructor(
-    public head: LinkedListNode<T> | null = null,
-    public tail: LinkedListNode<T> | null = null
-  ) { }
+
+  head: LinkedListNode<T> | null = null;
+  tail: LinkedListNode<T> | null = null;
+
+  length = 0;
 
   prepend(value: T): void {
     const node = new LinkedListNode<T>(value, this.head);
     this.head = node;
     if (!this.tail) this.tail = node;
+    this.length++;
   }
 
   append(value: T): void {
@@ -21,6 +23,7 @@ export class LinkedList<T> {
       this.tail.next = node;
       this.tail = node;
     }
+    this.length++;
   }
 
   find(compareFn: (a: T) => boolean): LinkedListNode<T> | null {
@@ -53,6 +56,7 @@ export class LinkedList<T> {
         this.head = null;
         this.tail = null;
       }
+      this.length--;
       return node;
     }
     while (node && node.next) {
@@ -60,8 +64,9 @@ export class LinkedList<T> {
         const removed = node.next;
         node.next = node.next.next;
         if (!node.next) {
-          this.tail = null;
+          this.tail = node;
         }
+        this.length--;
         return removed;
       }
       node = node.next;

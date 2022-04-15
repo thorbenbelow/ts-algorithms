@@ -11,7 +11,7 @@ export class HashTable<K, V> {
   }
 
   set(key: K, value: V): void {
-    const index = this.hash(key);
+    const index = this.index(key);
     if (this._values[index]) {
       this._values[index].append([key, value]);
     } else {
@@ -21,19 +21,23 @@ export class HashTable<K, V> {
   }
 
   keys(): K[] {
-    return [];
+    return this.entries().map(e => e[0]);
   }
 
   values(): V[] {
-    return [];
+    return this.entries().map(e => e[1]);
   }
 
   entries(): [K, V][] {
     return this._values.filter(row => !!row).map(row => Array.from(row.entries())).flat()
   }
 
+  index(key: K): number {
+    return this.hash(key) % this._values.length;
+  }
+
   get(key: K): V | null {
-    const index = this.hash(key);
+    const index = this.index(key);
     const val = this._values[index]?.find((pair) => pair[0] === key)
     return val?.value[1] || null;
 

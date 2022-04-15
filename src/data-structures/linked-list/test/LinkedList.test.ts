@@ -6,6 +6,7 @@ describe('LinkedList', () => {
     const linkedList = new LinkedList();
     expect(linkedList.head).toBeNull();
     expect(linkedList.tail).toBeNull();
+    expect(linkedList.length).toEqual(0);
   });
   describe('#prepend', () => {
     const linkedList = new LinkedList();
@@ -26,11 +27,13 @@ describe('LinkedList', () => {
       linkedList.append(1);
       assertNode(linkedList.head, 1);
       assertNode(linkedList.tail, 1);
+      expect(linkedList.length).toEqual(1);
     });
     it('should append second value', () => {
       linkedList.append(2);
       assertNode(linkedList.head, 1);
       assertNode(linkedList.tail, 2);
+      expect(linkedList.length).toEqual(2);
     });
   });
   describe('#find', () => {
@@ -68,22 +71,27 @@ describe('LinkedList', () => {
       expect(linkedList.remove(a => a === 3)).toBeNull();
       assertNode(linkedList.head, 1);
       assertNode(linkedList.tail, 2);
+      expect(linkedList.length).toEqual(2);
     })
     it('should remove the tail', () => {
       assertNode(linkedList.remove(a => a === 2), 2);
       assertNode(linkedList.head, 1);
       assertNode(linkedList.tail, 1);
+      expect(linkedList.length).toEqual(1);
     })
     it('should remove the head', () => {
       linkedList.append(2);
+      expect(linkedList.length).toEqual(2);
       assertNode(linkedList.remove(a => a === 1), 1);
       assertNode(linkedList.head, 2);
       assertNode(linkedList.tail, 2);
+      expect(linkedList.length).toEqual(1);
     })
     it('should remove the remaining node', () => {
       assertNode(linkedList.remove(a => a === 2), 2);
       expect(linkedList.head).toBeNull();
       expect(linkedList.tail).toBeNull();
+      expect(linkedList.length).toEqual(0);
     })
     it('should only remove one node', () => {
       linkedList.append(1);
